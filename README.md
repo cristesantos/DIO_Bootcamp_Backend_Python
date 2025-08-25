@@ -69,9 +69,38 @@ texto = fpreço = {preco}"  -> converte a variável preco em string para compor 
 preco_str = "10.50"           -> preco_str é uma string  
 preco_flt = float(preco_str)  -> converte a string preco_str em float para compor a variável preco_flt  
 
+# Precedência de operadores aritméticos
+* Parêntesis
+* Expoentes (**)
+* Multiplicação e divisão (da esquerda para a direita)
+* Somas e subtrações (da esquerda para a direita)
 
+# Operadores de comparação (número, string, etc.)
+== verifica se valores são iguais
+!= diferetes
+/>= maior ou igual
+/<= menor ou igual
 
+# Operadores de atribuição
+a = b  -> a recebe o valor de b
+a += b  -> a recebe a soma do valor b ao valor atual de a (ou seja, a = a+b)
+a -= b  -> a recebe a subtração do valor atual de a por b (ou seja, a = a-b)
+a *= b  -> a recebe a multiplicação do valor b pelo valor atual de a (ou seja, a = a*b)
+a /= b  -> a recebe a divisão(float) do valor atual de a pelo valor atual de b (ou seja, a = a/b)
+a //= b  -> a recebe a divisão(inteira) do valor atual de a pelo valor atual de b (ou seja, a = a//b)
+a %= b  -> a recebe o resto da divisão(inteira) do valor atual de a pelo valor atual de b (ou seja, a = a%b)
+a/**= b  -> a recebe o resultado do valor atual de a elevado ao valor de b (ou seja, a = a/**b)
 
+# Operadores de idantidade
+is  -> verifica se a variável ocupa a mesma posição de memória
+is not
 
+# Operadores de associação
+Verificam de um item está presente em uma sequência
+Ex: curso = "Curso de Python"
+    frutas = [maçã, uva, banana]
+    saque = [1500, 100]
 
-
+in  -->          "Python" on curso --> True
+                 300 in saque  --> False
+not in  -->      "limão" not in frutas --> True
