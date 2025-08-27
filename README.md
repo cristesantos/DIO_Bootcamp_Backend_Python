@@ -112,58 +112,57 @@ is  -> verifica se a variável ocupa a mesma posição de memória
 is not
 
 # Operadores de associação
-Verificam de um item está presente em uma sequência
-Ex: curso = "Curso de Python"
-    frutas = [maçã, uva, banana]
-    saque = [1500, 100]
+Verificam de um item está presente em uma sequência  
+Ex: curso = "Curso de Python"  
+    frutas = [maçã, uva, banana]  
+    saque = [1500, 100]  
 
-in  -->          "Python" on curso --> True
-                 300 in saque  --> False
-not in  -->      "limão" not in frutas --> True
+in  -->          "Python" on curso --> True  
+                 300 in saque  --> False  
+not in  -->      "limão" not in frutas --> True  
 
-# Estruturas condicionais
-**if _condição1_:**
-  _código do if_
-**elif _condição2_:**
-  _código do elif_
-**else:**
-  _código do else_
+# Estruturas condicionais  
+**if _condição1_:**  
+  _código do if_  
+**elif _condição2_:**  
+  _código do elif_  
+**else:**  
+  _código do else_  
 
-## if ternário
-(_sucesso_) **if** (_condição_) **else** (_falha_)
-Ex: "Saque permitido" **if** saldo >= saque **else** "Falha! Não há fundos."
+## if ternário  
+(_sucesso_) **if** (_condição_) **else** (_falha_)  
+Ex: "Saque permitido" **if** saldo >= saque **else** "Falha! Não há fundos."  
 
-# Estruturas de repetição
-## **FOR**
-**for** (_índice da iteração_) **in** (_elemento a ser iterado_)
+# Estruturas de repetição  
+## **FOR**  
+**for** (_índice da iteração_) **in** (_elemento a ser iterado_)  
 * Exemplos:
-     - **for** letra **in** texto
-     - **for** indice **in** array
+     - **for** letra **in** texto  
+     - **for** indice **in** array  
 ## **FOR/ELSE**
-**for** (_índice da iteração_) **in** (_elemento a ser iterado_)
-**else** _ação de fim de laço_
-* Exemplo:
-     - **for** letra **in** texto
-         print(letra)
-       **else** print("Fim do laço for!")
+**for** (_índice da iteração_) **in** (_elemento a ser iterado_)  
+**else** _ação de fim de laço_  
+* Exemplo:  
+     - **for** letra **in** texto  
+         print(letra)  
+       **else** print("Fim do laço for!")  
        
 ## **FOR RANGE**
-**for** (_índice da iteração_) **range(start, stop, step)**
-**else** _ação de fim de laço_
-* Exemplo:
-     - **for** numero **range(1,21,3)**
-         print(numero)
-       **else** print("Fim do laço for!")
+**for** (_índice da iteração_) **range(start, stop, step)**  
+**else** _ação de fim de laço_  
+* Exemplo:  
+     - **for** numero **range(1,21,3)**  
+         print(numero)  
+       **else** print("Fim do laço for!")  
        
 ## **WHILE**
-**while** (_condição de parada da iteração_)**:**
-* Exemplo:
-     - **while** True:
-           input("numero: ", numero)
-           if (numero = 10):
-               break
-           if (numero = 15):
-               continue
-           print(numero)
-       
-       **else** print("Fim do laço while!")
+**while** (_condição de parada da iteração_)**:**  
+* Exemplo:  
+     - **while** True:  
+           input("numero: ", numero)  
+           if (numero = 10):  
+               break  
+           if (numero = 15):  
+               continue  
+           print(numero)  
+       **else** print("Fim do laço while!")  
