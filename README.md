@@ -39,7 +39,23 @@ Exibe dados na saída padrão (console).
      - sep imprime os objetos com o sep entre eles
      - end termina os objetos
      - Todos os objetos são convertidos para string
+* Exemplos:
+     - print("Hello World!")
+     - print(f"Nome: {nome}")
 
+## Função range()
+Produz uma sequência de números inteiros
+* Recebe um argumento obrigatório e 2 opcionais
+     - stop é o obrigatório - indica o fim da sequência com exclusão do valorde stop
+     - start opcional - indica o início da sequência, incluído o valor de start
+     - step opcional - indica o passo entre os elementos da sequencia
+* Exemplos
+     - **range(4)** - retorna range(0,4) que é um range object, não a sequencia. Para gerar a sequencia é preciso usar list
+                    **list(range(4))** -> retorna [0, 1, 2, 3]
+     - **range(2,7)** - retorna range(2,7) que é um range object, não a sequencia. Para gerar a sequencia é preciso usar list
+                       **list(range(2,7))** -> retorna [2, 3, 4, 5, 6]
+     - **range(5,11,2)** -  retorna range(5,11,2) que é um range object, não a sequencia. Para gerar a sequencia é preciso usar list
+                       **list(range(5,11,2))** -> retorna [5, 7, 9]
 
 # Tipos de variáveis em Python
 * Numéricos: int, float, complex
@@ -104,3 +120,50 @@ Ex: curso = "Curso de Python"
 in  -->          "Python" on curso --> True
                  300 in saque  --> False
 not in  -->      "limão" not in frutas --> True
+
+# Estruturas condicionais
+**if _condição1_:**
+  _código do if_
+**elif _condição2_:**
+  _código do elif_
+**else:**
+  _código do else_
+
+## if ternário
+(_sucesso_) **if** (_condição_) **else** (_falha_)
+Ex: "Saque permitido" **if** saldo >= saque **else** "Falha! Não há fundos."
+
+# Estruturas de repetição
+## **FOR**
+**for** (_índice da iteração_) **in** (_elemento a ser iterado_)
+* Exemplos:
+     - **for** letra **in** texto
+     - **for** indice **in** array
+## **FOR/ELSE**
+**for** (_índice da iteração_) **in** (_elemento a ser iterado_)
+**else** _ação de fim de laço_
+* Exemplo:
+     - **for** letra **in** texto
+         print(letra)
+       **else** print("Fim do laço for!")
+       
+## **FOR RANGE**
+**for** (_índice da iteração_) **range(start, stop, step)**
+**else** _ação de fim de laço_
+* Exemplo:
+     - **for** numero **range(1,21,3)**
+         print(numero)
+       **else** print("Fim do laço for!")
+       
+## **WHILE**
+**while** (_condição de parada da iteração_)**:**
+* Exemplo:
+     - **while** True:
+           input("numero: ", numero)
+           if (numero = 10):
+               break
+           if (numero = 15):
+               continue
+           print(numero)
+       
+       **else** print("Fim do laço while!")
