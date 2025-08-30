@@ -165,4 +165,64 @@ Ex: "Saque permitido" **if** saldo >= saque **else** "Falha! Não há fundos."
            if (numero = 15):  
                continue  
            print(numero)  
-       **else** print("Fim do laço while!")  
+       **else** print("Fim do laço while!")
+
+# Métodos da classe String  
+**upper()** converte todos caracteres em maiúsculo  
+**lower()** converte todos caracteres em minúsculo  
+**title()** converte o primeiro cacter para maiúsculo e os demais caracteres para minúsculo  
+**strip()** remove todos osespaços em branco da string  
+**lstrip()** remove os osespaços em branco da esquerda da string  
+**rtrip()** remove os osespaços em branco da direita da string  
+**center()** centraliza um texto em uma string e preenche o restante (tamanho a ser informado) com um caracter específico.  
+     - curso = "Python"
+     - print(curso.center(10, "#"))
+     - resultado: **##Python##**
+**join()** adiciona um caracter específico entre os caracteres do texto.  
+     - curso = "Python"
+     - print(curso.join(".", curso.join()))
+     - resultado: **P.y.t.h.o.n**
+
+## Concatenação de strings  
+
+print("concatenação: " + nome + " tem " + str(idade) + " anos e trabalha como " + profissao + " e estou aprendendo " + linguagem + ".")  
+print("Olá, me chamo %s, tenho %d anos e trabalho como %s e estou aprendendo %s." % (nome, idade, profissao, linguagem))  
+print("Olá, me chamo {}, tenho {} anos, trabalho como {} e estou aprendendo {}.".format(nome, idade, profissao, linguagem))  
+print("Olá, me chamo {0}, tenho {1} anos e trabalho como {2} e estou aprendendo {3}.".format(nome, idade, profissao, linguagem))  
+print("Olá, estou aprendendo {3},  me chamo {0}, e trabalho como {2}.".format(nome, idade, profissao, linguagem))  
+print("Usando o formato nome=valor:")  
+print("Olá, estou aprendendo {linguagem},  me chamo {nome}, e trabalho como {profissao}.".format(nome=nome, idade=idade, profissao=profissao, linguagem=linguagem))  
+print("Usando o formato f-string:")  
+print(f"Olá, estou aprendendo {linguagem},  me chamo {nome}, e trabalho como {profissao}.")  
+
+print(f"Nome: {nome:>10}.")  
+
+PI = 3.141592653589793  
+print(f"Valor de PI com 2 casas decimais: {PI:.2f}.")  
+print(f"Valor de PI com 10 cacteres e 3 casas decimais: {PI:10.3f}.")  
+
+## Fatiamento de strings  
+
+nome = "Francisco Cândido Xavier"  
+print(nome[0])  ->  F  
+print(nome[0:9])  ->  Francisco  
+print(nome[10:])  ->  CÂndido Xavier  
+
+* **Espelhamento** de string
+print("Nome espelhado:", nome[:9][::-1])  
+print("Nome completo espelhado:", nome[::-1])  
+
+## String múltiplas
+mensagem = f'''  
+Olá, meu nome é: {nome}  
+Idade: {idade}   
+Sou {profissao}  
+Estou aprendendo: {linguagem}  
+'''  
+print(mensagem)  
+
+
+
+
+
+
